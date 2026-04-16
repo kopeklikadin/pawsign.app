@@ -3,177 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portföyüm | Turkuaz Esintisi</title>
+    <title>Paw Sign | Sözlerden Güçlü Bir İletişim</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .glass { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); }
-        /* Görseldeki renk tonlarına özel sınıflar */
-        .bg-teal-gradient { background: linear-gradient(135deg, #4fd1c5 0%, #38b2ac 100%); }
-        .text-teal-custom { color: #2c7a7b; }
-        .shadow-teal-custom { shadow-lg shadow-[#4fd1c5]/30; }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        
+        :root {
+            --brand-teal: #38b2ac;
+            --brand-dark: #2c7a7b;
+            --soft-bg: #f8fafc;
+        }
+
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            scroll-behavior: smooth;
+            background-color: var(--soft-bg);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(56, 178, 172, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+        }
+
+        .premium-card {
+            background: white;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(56, 178, 172, 0.1);
+        }
+
+        .premium-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(44, 122, 123, 0.08);
+            border-color: rgba(56, 178, 172, 0.3);
+        }
+
+        .floating-anim {
+            animation: floating 6s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .text-balance { text-wrap: balance; }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: var(--brand-teal); border-radius: 10px; }
+
+        .lumen-pulse {
+            animation: lumen-pulse 2s infinite;
+        }
+
+        @keyframes lumen-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(56, 178, 172, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(56, 178, 172, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(56, 178, 172, 0); }
+        }
     </style>
 </head>
-<body class="bg-[#f0f9f9] text-slate-800">
-
+<body class="text-slate-900 overflow-x-hidden">
+    
     <!-- Navigasyon -->
-    <nav class="fixed w-full z-50 glass border-b border-teal-100">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <div class="text-xl font-bold bg-gradient-to-r from-[#4fd1c5] to-[#2c7a7b] bg-clip-text text-transparent">
-                KullanıcıAdı
+    <nav class="fixed w-full z-[100] glass-nav border-b border-teal-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4 group cursor-pointer">
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-teal-400 rounded-full blur opacity-25 group-hover:opacity-50 transition"></div>
+                    <!-- Logo görseli buraya eklendi -->
+                    <img src="PawSign.svg" alt="Paw Sign Logo" class="relative w-10 h-10 object-contain rounded-lg">
+                </div>
+                <span class="text-xl font-extrabold tracking-tight text-slate-800">
+                    PAW<span class="text-[#38b2ac]">SIGN</span>
+                </span>
             </div>
-            <div class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#home" class="hover:text-[#38b2ac] transition">Ana Sayfa</a>
-                <a href="#about" class="hover:text-[#38b2ac] transition">Hakkımda</a>
-                <a href="#projects" class="hover:text-[#38b2ac] transition">Projeler</a>
-                <a href="#contact" class="hover:text-[#38b2ac] transition">İletişim</a>
+            
+            <div class="hidden md:flex items-center gap-10 text-[15px] font-medium text-slate-600">
+                <a href="#home" class="hover:text-[#38b2ac] transition-colors">Keşfet</a>
+                <a href="#about" class="hover:text-[#38b2ac] transition-colors">Neden Paw Sign?</a>
+                <a href="#services" class="hover:text-[#38b2ac] transition-colors">Uygulama Özellikleri</a>
+                <div class="h-4 w-[1px] bg-slate-200"></div>
+                <button class="bg-slate-900 text-white px-7 py-2.5 rounded-full font-semibold hover:bg-black transition shadow-lg shadow-slate-200">
+                    Hemen İndir
+                </button>
             </div>
-            <button class="md:hidden p-2 text-[#2c7a7b]" onclick="toggleMenu()">
-                <i data-lucide="menu"></i>
+
+            <button class="md:hidden text-slate-800">
+                <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
         </div>
     </nav>
 
-    <!-- Hero Bölümü -->
-    <section id="home" class="pt-32 pb-20 px-4">
-        <div class="max-w-6xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-                Merhaba, Ben <span class="text-[#38b2ac]">Yazılımcı</span>
-            </h1>
-            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Gönderdiğin görseldeki ferah tonlar gibi; temiz, hızlı ve kullanıcı odaklı dijital çözümler üretiyorum.
-            </p>
-            <div class="flex justify-center gap-4">
-                <a href="#projects" class="bg-[#38b2ac] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#2c7a7b] transition shadow-lg shadow-[#38b2ac]/20">Projelerimi Gör</a>
-                <a href="#contact" class="bg-white border border-teal-200 text-[#2c7a7b] px-8 py-3 rounded-full font-semibold hover:bg-teal-50 transition">Bana Ulaşın</a>
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-44 pb-6 px-6 hero-gradient">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div class="text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-teal-50 border border-teal-100 text-[#2c7a7b] px-4 py-1.5 rounded-full text-xs font-bold mb-8 uppercase tracking-widest">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
+                    </span>
+                    Tüm Dostlarımız İçin Bütünsel Çözüm
+                </div>
+                <h1 class="text-6xl lg:text-7xl font-[800] text-slate-900 leading-[1.1] mb-8 text-balance">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#38b2ac] to-[#2c7a7b]">Sözlerden güçlü</span> bir iletişim ellerinizde
+                </h1>
+                <p class="text-2xl text-slate-600 font-medium mb-12 max-w-xl mx-auto lg:mx-0 leading-relaxed italic border-l-4 border-teal-400 pl-6">
+                    "Sağlık takibi, Eğitim ve Mutlu bir yaşam için tek bir uygulama"
+                </p>
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                    <!-- App Store Butonu -->
+                    <a href="#" class="group flex items-center justify-center gap-3 bg-black text-white px-5 py-2.5 rounded-xl hover:bg-slate-800 hover:-translate-y-1 transition-all duration-300 shadow-xl shadow-slate-300 w-[170px]" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+                        <svg viewBox="0 0 384 512" fill="currentColor" class="w-8 h-8"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                        <div class="text-left flex-1">
+                            <p class="text-[10px] text-white/90 leading-none mb-1">App Store'dan</p>
+                            <p class="text-[18px] font-semibold leading-none tracking-tight">İndirin</p>
+                        </div>
+                    </a>
+                    
+                    <!-- Google Play Butonu -->
+                    <a href="#" class="group flex items-center justify-center gap-3 bg-black text-white px-5 py-2.5 rounded-xl hover:bg-slate-800 hover:-translate-y-1 transition-all duration-300 shadow-xl shadow-slate-300 w-[170px]" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+                        <svg viewBox="0 0 512 512" fill="currentColor" class="w-7 h-7"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+                        <div class="text-left flex-1">
+                            <p class="text-[10px] text-white/90 uppercase font-medium leading-none mb-1 tracking-wide">İndirin</p>
+                            <p class="text-[17px] font-semibold leading-none tracking-tight">Google Play</p>
+                        </div>
+                    </a>
+                </div>
             </div>
+
         </div>
     </section>
 
-    <!-- Hakkımda Bölümü -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="w-48 h-48 rounded-3xl bg-gradient-to-tr from-[#e6fffa] to-[#b2f5ea] flex items-center justify-center shrink-0 border-4 border-white shadow-xl">
-                    <!-- Görseldeki patiye atıfta bulunarak kalp/kullanıcı ikonu -->
-                    <i data-lucide="heart" class="w-24 h-24 text-[#38b2ac]"></i>
+    <!-- Neden Paw Sign Section -->
+    <section id="about" class="py-8 px-6 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-24 items-center mb-24">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-teal-50 rounded-[4rem] rotate-3 scale-105"></div>
+                    <div class="relative bg-[#f8fafc] rounded-[4rem] p-8 border border-white shadow-inner mx-auto max-w-lg">
+                        <div class="columns-2 md:columns-3 gap-4">
+                            <img src="image1.png" alt="Paw Care 1" class="rounded-2xl object-cover w-full mb-4 shadow-lg hover:shadow-xl transition break-inside-avoid" style="aspect-ratio: 9/16;">
+                            <img src="image2.png" alt="Paw Care 2" class="rounded-2xl object-cover w-full mb-4 shadow-lg hover:shadow-xl transition break-inside-avoid" style="aspect-ratio: 9/20;">
+                            <img src="image3.png" alt="Paw Care 3" class="rounded-2xl object-cover w-full mb-4 shadow-lg hover:shadow-xl transition break-inside-avoid" style="aspect-ratio: 9/14;">
+                            <img src="image4.png" alt="Paw Care 4" class="rounded-2xl object-cover w-full mb-4 shadow-lg hover:shadow-xl transition break-inside-avoid" style="aspect-ratio: 9/18;">
+                        </div>
+                    </div>
                 </div>
+
                 <div>
-                    <h2 class="text-3xl font-bold mb-4 text-[#2c7a7b]">Hakkımda</h2>
-                    <p class="text-slate-600 leading-relaxed mb-6">
-                        Yazılım dünyasında renklerin ve tasarımın gücüne inanıyorum. Modern arayüzler geliştirirken hem estetiği hem de fonksiyonelliği bir arada sunuyorum.
+                    <h2 class="text-sm font-extrabold text-[#38b2ac] uppercase tracking-[0.3em] mb-6">Neden Paw Sign?</h2>
+                    <h3 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">
+                        Pati Sahipleri İçin <br>Profesyonel Bir Yol Arkadaşı
+                    </h3>
+                    <p class="text-lg text-slate-500 mb-12 leading-relaxed">
+                        Dostlarımızın dünyasına özel tasarlanan Paw Sign, karmaşayı ortadan kaldırır. Onun dilinden konuşan, sağlığını koruyan akıllı bir asistan.
                     </p>
-                    <div class="flex flex-wrap gap-2 text-sm">
-                        <span class="bg-[#e6fffa] text-[#2c7a7b] px-3 py-1 rounded-full border border-[#b2f5ea]">React.js</span>
-                        <span class="bg-[#e6fffa] text-[#2c7a7b] px-3 py-1 rounded-full border border-[#b2f5ea]">Tailwind CSS</span>
-                        <span class="bg-[#e6fffa] text-[#2c7a7b] px-3 py-1 rounded-full border border-[#b2f5ea]">UI/UX Design</span>
+
+                    <div class="space-y-6">
+                        <div class="group flex gap-6 items-start p-6 rounded-[2rem] bg-white border border-teal-100 hover:bg-teal-50/30 transition-all">
+                            <div class="w-12 h-12 shrink-0 bg-teal-50 rounded-xl flex items-center justify-center text-[#38b2ac]">
+                                <i data-lucide="zap" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900 mb-1">Görsel Islık (Lümen)</h4>
+                                <p class="text-slate-500 text-sm leading-relaxed">Işık ritimleriyle kelimelere ihtiyaç duymadan ona ulaşın. Mesafeleri ışıkla aşın</p>
+                            </div>
+                        </div>
+
+                        <div class="group flex gap-6 items-start p-6 rounded-[2rem] bg-white border border-teal-100 hover:bg-teal-50/30 transition-all">
+                            <div class="w-12 h-12 shrink-0 bg-teal-50 rounded-xl flex items-center justify-center text-[#38b2ac]">
+                                <i data-lucide="activity" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900 mb-1">Akıllı Sağlık Asistanı</h4>
+                                <p class="text-slate-500 text-sm leading-relaxed">Aşı, beslenme, cilt ve semptom takibiyle dostunuzun tüm sağlık verilerini güvenceye alın</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Projeler Bölümü -->
-    <section id="projects" class="py-20 px-4">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center text-[#2c7a7b]">Öne Çıkan Projeler</h2>
+            <!-- Stratejik Özellik Kartları -->
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Proje 1 -->
-                <div class="bg-white p-2 rounded-3xl border border-teal-100 hover:shadow-2xl hover:border-[#38b2ac]/30 transition duration-300 group">
-                    <div class="h-48 bg-[#f0f9f9] rounded-2xl mb-4 flex items-center justify-center overflow-hidden">
-                        <i data-lucide="layout" class="w-12 h-12 text-[#b2f5ea] group-hover:text-[#38b2ac] group-hover:scale-110 transition duration-300"></i>
+                <div class="premium-card p-10 rounded-[3rem]">
+                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mb-8 text-[#38b2ac]">
+                        <i data-lucide="stethoscope" class="w-10 h-10"></i>
                     </div>
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-[#2c7a7b] transition">E-Ticaret Arayüzü</h3>
-                        <p class="text-slate-500 text-sm mb-4">Gönderdiğin görseldeki gibi ferah ve modern bir alışveriş deneyimi.</p>
-                        <a href="#" class="text-[#38b2ac] font-semibold flex items-center gap-1 text-sm">
-                            Detaylar <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </a>
-                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Sağlık Yönetimi</h4>
+                    <p class="text-slate-500 leading-relaxed font-medium">Ağız sağlığından tırnak bakımına, kilo kontrolünden cilt sağlığına kadar her detayı takip edin</p>
                 </div>
-                <!-- Proje 2 -->
-                <div class="bg-white p-2 rounded-3xl border border-teal-100 hover:shadow-2xl hover:border-[#38b2ac]/30 transition duration-300 group">
-                    <div class="h-48 bg-[#f0f9f9] rounded-2xl mb-4 flex items-center justify-center overflow-hidden">
-                        <i data-lucide="database" class="w-12 h-12 text-[#b2f5ea] group-hover:text-[#38b2ac] group-hover:scale-110 transition duration-300"></i>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-[#2c7a7b] transition">API Yönetimi</h3>
-                        <p class="text-slate-500 text-sm mb-4">Veri akışını düzenleyen güçlü ve optimize edilmiş backend yapıları.</p>
-                        <a href="#" class="text-[#38b2ac] font-semibold flex items-center gap-1 text-sm">
-                            Detaylar <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Proje 3 -->
-                <div class="bg-white p-2 rounded-3xl border border-teal-100 hover:shadow-2xl hover:border-[#38b2ac]/30 transition duration-300 group">
-                    <div class="h-48 bg-[#f0f9f9] rounded-2xl mb-4 flex items-center justify-center overflow-hidden">
-                        <i data-lucide="smartphone" class="w-12 h-12 text-[#b2f5ea] group-hover:text-[#38b2ac] group-hover:scale-110 transition duration-300"></i>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-[#2c7a7b] transition">Mobil Tasarım</h3>
-                        <p class="text-slate-500 text-sm mb-4">Her ekrana uyum sağlayan, göz yormayan mobil arayüz çalışmaları.</p>
-                        <a href="#" class="text-[#38b2ac] font-semibold flex items-center gap-1 text-sm">
-                            Detaylar <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- İletişim Bölümü -->
-    <section id="contact" class="py-24 bg-[#2c7a7b] text-white px-4 relative overflow-hidden">
-        <!-- Arka plana hafif bir pati efekti/ikonu eklenebilir -->
-        <div class="absolute -right-20 -bottom-20 opacity-10 transform rotate-12">
-            <i data-lucide="heart" class="w-96 h-96"></i>
-        </div>
-        
-        <div class="max-w-4xl mx-auto text-center relative z-10">
-            <h2 class="text-4xl font-bold mb-8">Yeni Bir Başlangıç Yapalım</h2>
-            <p class="text-teal-100 mb-12 text-lg">Projenizi bu ferah renklerle canlandırmaya ne dersiniz?</p>
-            
-            <div class="flex flex-wrap justify-center gap-6">
-                <a href="mailto:email@adresiniz.com" class="flex items-center gap-3 bg-white text-[#2c7a7b] px-8 py-4 rounded-2xl font-bold hover:scale-105 transition shadow-xl">
-                    <i data-lucide="mail"></i>
-                    <span>E-posta Gönder</span>
-                </a>
-                <a href="#" class="flex items-center gap-3 bg-[#38b2ac] text-white px-8 py-4 rounded-2xl font-bold hover:bg-[#285e61] transition border border-teal-400">
-                    <i data-lucide="linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
+                <div class="premium-card p-10 rounded-[3rem] bg-slate-900 text-white border-none shadow-2xl">
+                    <div class="w-16 h-16 bg-teal-500 rounded-2xl flex items-center justify-center mb-8 text-white lumen-pulse">
+                        <i data-lucide="zap" class="w-10 h-10"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Lümen Eğitimi</h4>
+                    <p class="text-slate-300 leading-relaxed font-medium">
+                        Özel flaş ritimleri ile iletişimi teknolojik bir boyuta dönüştürün. Sözlerden daha güçlü bir bağ kurun
+                    </p>
+                </div>
+
+                <div class="premium-card p-10 rounded-[3rem]">
+                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mb-8 text-[#38b2ac]">
+                        <i data-lucide="sun" class="w-10 h-10"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Mutlu Yaşam</h4>
+                    <p class="text-slate-500 leading-relaxed font-medium">
+                        Rutin bakımlar, eksiksiz sağlık takibi ve doğru iletişimle gelen huzurlu ve uzun bir birliktelik
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 text-center text-slate-400 text-sm bg-[#f0f9f9] border-t border-teal-100">
-        <p class="mb-2 italic">Tasarım, gönderdiğiniz görselden ilham alınarak güncellenmiştir.</p>
-        &copy; 2024 KullanıcıAdı. Tüm hakları saklıdır.
+    <footer class="bg-slate-900 text-white pt-24 pb-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 mb-8">
+                        <img src="PawSign.svg" alt="Paw Sign Logo" class="w-10 h-10 object-contain rounded-lg">
+                    <span class="text-2xl font-extrabold tracking-tighter">PAW SIGN</span>
+                </div>
+                <p class="text-slate-400 max-w-sm mb-8 leading-relaxed">
+                    Sağlık takibi, eğitim ve mutlu bir yaşam için tek bir uygulama
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#" class="flex items-center gap-2 bg-slate-800 text-white px-4 py-2 rounded-xl hover:bg-black transition-all border border-slate-700 w-[140px]" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+                        <svg viewBox="0 0 384 512" fill="currentColor" class="w-6 h-6"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                        <div class="text-left flex-1">
+                            <p class="text-[8px] text-slate-300 leading-none mb-0.5">App Store'dan</p>
+                            <p class="text-[14px] font-semibold leading-none tracking-tight">İndirin</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex items-center gap-2 bg-slate-800 text-white px-4 py-2 rounded-xl hover:bg-black transition-all border border-slate-700 w-[140px]" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+                        <svg viewBox="0 0 512 512" fill="currentColor" class="w-5 h-5"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+                        <div class="text-left flex-1">
+                            <p class="text-[8px] text-slate-300 uppercase font-medium leading-none mb-0.5 tracking-wide">İndirin</p>
+                            <p class="text-[13px] font-semibold leading-none tracking-tight">Google Play</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 uppercase tracking-widest text-xs text-teal-400">Modüller</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li>Lümen Eğitimi</li>
+                        <li>Semptom Takibi</li>
+                        <li>Silent Bond Rehberi</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 uppercase tracking-widest text-xs text-teal-400">İletişim</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li>hello@pawsign.app</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-slate-800 text-center md:text-left text-sm text-slate-500">
+                <p>© 2026 PAW SIGN. Sağlıkla Kalın, Sözlerle Değil Gözlerle Bağlanın</p>
+            </div>
+        </div>
     </footer>
 
     <script>
-        // İkonları başlat
         lucide.createIcons();
-
-        // Mobil Menü Toggle
-        function toggleMenu() {
-            const nav = document.querySelector('.hidden.md\\:flex');
-            nav.classList.toggle('hidden');
-            nav.classList.toggle('flex');
-            nav.classList.toggle('flex-col');
-            nav.classList.toggle('absolute');
-            nav.classList.toggle('top-16');
-            nav.classList.toggle('left-0');
-            nav.classList.toggle('w-full');
-            nav.classList.toggle('bg-white');
-            nav.classList.toggle('p-8');
-            nav.classList.toggle('shadow-2xl');
-            nav.classList.toggle('z-40');
-        }
     </script>
 </body>
 </html>
