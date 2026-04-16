@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KVKK Aydınlatma Metni | Paw Sign</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+        :root {
+            --brand-teal: #38b2ac;
+            --brand-dark: #2c7a7b;
+            --soft-bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--soft-bg);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--brand-teal);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="text-slate-900 overflow-x-hidden">
+
+    <!-- Navigasyon -->
+    <nav class="fixed w-full z-[100] glass-nav border-b border-teal-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-teal-400 rounded-full blur opacity-25 group-hover:opacity-50 transition"></div>
+                    <img src="PawSign.svg" alt="Paw Sign Logo" class="relative w-10 h-10 object-contain rounded-lg">
+                </div>
+                <span class="text-xl font-extrabold tracking-tight text-slate-800">
+                    PAW<span class="text-[#38b2ac]">SIGN</span>
+                </span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-10 text-[15px] font-medium text-slate-600">
+                <a href="index.html" class="hover:text-[#38b2ac] transition-colors">Anasayfa</a>
+                <a href="index.html#iletisim" class="hover:text-[#38b2ac] transition-colors">İletişim</a>
+                <div class="h-4 w-[1px] bg-slate-200"></div>
+                <a href="index.html"
+                    class="bg-slate-900 text-white px-7 py-2.5 rounded-full font-semibold hover:bg-black transition shadow-lg shadow-slate-200">
+                    Hemen İndir
+                </a>
+            </div>
+
+            <button class="md:hidden text-slate-800">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- KVKK Section -->
+    <section class="pt-32 pb-24 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-14">
+                <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">KVKK Aydınlatma Metni</h1>
+                <p class="mt-4 text-slate-500 text-sm italic">Kişisel Verilerin Korunması Kanunu Kapsamında Bilgilendirme</p>
+            </div>
+
+            <div class="bg-white rounded-[3rem] border border-teal-100 p-10 lg:p-14 shadow-sm space-y-10 text-slate-600 leading-relaxed">
+                
+                <p class="text-[15px] text-slate-600 leading-relaxed">
+                    Bu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 10. maddesi kapsamında hazırlanmıştır.
+                </p>
+
+                <!-- 1 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">1</span>
+                        Veri Sorumlusu Kimliği
+                    </h4>
+                    <p class="text-[15px] pl-11">
+                        <strong>Veri Sorumlusu:</strong> İrem Akay (Bağımsız Geliştirici)<br>
+                        <strong>E-posta:</strong> hello@pawsign.app<br>
+                        <strong>Web Sitesi:</strong> www.pawsign.app
+                    </p>
+                </div>
+
+                <!-- 2 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">2</span>
+                        Kişisel Verilerin İşlenme Amacı
+                    </h4>
+                    <div class="pl-11 space-y-3">
+                        <p class="text-[15px]">Kişisel verileriniz aşağıdaki amaçlarla işlenmektedir:</p>
+                        <ul class="space-y-2 text-[15px]">
+                            <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Hizmet Sunumu:</strong> Uygulama içi hesap oluşturulması ve abonelik süreçlerinin yönetimi.</span></li>
+                            <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Analiz ve Geliştirme:</strong> Uygulama performansının ölçülmesi, hataların tespiti ve kullanıcı deneyiminin iyileştirilmesi amacıyla kimliksizleştirilmiş (anonim) kullanım istatistiklerinin analizi.</span></li>
+                            <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Yasal Yükümlülük:</strong> Kanuni yükümlülüklerin yerine getirilmesi.</span></li>
+                        </ul>
+                        <p class="mt-4 text-[14px] text-slate-600 italic">
+                            <strong>Not:</strong> Evcil hayvanınızın bakım, aşı, sağlık bilgileri ve fotoğrafları sunucularımızda işlenmez; yalnızca cihazınızda yerel olarak (telefonda) saklanır.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">3</span>
+                        İşlenen Kişisel Veri Kategorileri
+                    </h4>
+                    <div class="pl-11 space-y-3">
+                        <p class="text-[15px]">Platformumuz aracılığıyla yalnızca aşağıdaki kategorilerde veriler işlenmektedir:</p>
+                        <ul class="space-y-2 text-[15px]">
+                            <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Kimlik ve İletişim Verileri:</strong> Ad, soyad, e-posta adresi (Yalnızca hesap oluşturma ve doğrulama amacıyla).</span></li>
+                            <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Finansal Veriler:</strong> Abonelik durumu ve uygulama içi satın alma işlem bilgileri (Kredi kartı bilgileriniz Paw Sign tarafından kesinlikle saklanmaz; ödemeler doğrudan Apple/Google altyapısı ile gerçekleşir).</span></li>
+                            <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>İşlem Güvenliği ve Analitik Verileri:</strong> Uygulama kullanım istatistikleri, cihaz modeli, işletim sistemi versiyonu, çökme logları (Crashlytics/Analytics verileri).</span></li>
+                        </ul>
+                        <p class="mt-4 text-[14px] text-slate-500 italic">
+                            <strong>Önemli:</strong> Uygulamamız uzaktan anlık bildirim (Push Notification) sunucuları kullanmadığından FCM/APNs cihaz token'ları toplanmaz. Hatırlatmalar cihazınızın yerel sistemleri üzerinden (Local Notifications) çevrimdışı olarak çalışır.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">4</span>
+                        Kişisel Verilerin İşlenme Hukuki Sebepleri
+                    </h4>
+                    <ul class="pl-11 space-y-2 text-[15px]">
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Sözleşmenin İfası (KVKK m.5/2-c):</strong> Kullanıcı hesabının oluşturulması, altyapının sağlanması ve uygulama içi satın alma süreçleri.</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Meşru Menfaat (KVKK m.5/2-f):</strong> Hataların giderilmesi, analitik verilerle uygulamanın geliştirilmesi.</span></li>
+                    </ul>
+                </div>
+
+                <!-- 5 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">5</span>
+                        Kişisel Verilerin Aktarıldığı Taraflar ve Yurt Dışı Aktarımı
+                    </h4>
+                    <p class="text-[15px] pl-11 mb-3">Paw Sign, kişisel verilerinizi reklam şirketlerine satmaz veya yetkisiz üçüncü kişilerle paylaşmaz. Ancak, uygulamanın çalışabilmesi için altyapı hizmeti aldığımız global servis sağlayıcıların sunucuları yurt dışında bulunmaktadır. Bu kapsamda verileriniz, 6698 sayılı KVKK’nın 9. maddesi uyarınca; yeterli korumanın bulunduğu ülkelere veya Kurul tarafından onaylanmış Standart Sözleşme gibi uygun güvencelerin sağlandığı platformlara aktarılmaktadır:</p>
+                    <ul class="pl-11 space-y-2 text-[15px]">
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Firebase (Google):</strong> Kimlik doğrulama, uygulama içi hata ayıklama ve anonim istatistiksel analizler (Analytics) için.</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>RevenueCat:</strong> Abonelik yönetimi ve uygulama içi satın almaların doğrulanması için.</span></li>
+                    </ul>
+                </div>
+
+                <!-- 6 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">6</span>
+                        Kişisel Verilerin Toplanma Yöntemi
+                    </h4>
+                    <p class="text-[15px] pl-11">Kişisel verileriniz; uygulamaya kayıt olmanız yoluyla doğrudan; analitik ve hata ayıklama araçlarının (Firebase) cihazınızda çalışması yoluyla otomatik olarak toplanmaktadır.</p>
+                </div>
+
+                <!-- 7 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">7</span>
+                        KVKK Kapsamındaki Haklarınız
+                    </h4>
+                    <p class="text-[15px] pl-11">6698 sayılı KVKK'nın 11. maddesi kapsamında; verilerinizin işlenip işlenmediğini öğrenme, işlenme amacını bilme, yurt içi/yurt dışı aktarımını öğrenme, eksik/yanlış verilerin düzeltilmesini ve KVKK şartları çerçevesinde verilerinizin silinmesini talep etme hakkına sahipsiniz.</p>
+                </div>
+
+                <!-- 8 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">8</span>
+                        Veri Saklama ve Silme Süreleri
+                    </h4>
+                    <ul class="pl-11 space-y-3 text-[15px]">
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Yerel Veriler:</strong> Evcil hayvanınıza ait bilgiler uygulamayı cihazınızdan sildiğiniz an tamamen yok olur.</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Hesap ve Analitik Verileri:</strong> Uygulama ayarlarında yer alan "Hesabı Sil" butonunu kullandığınızda veya e-posta ile talepte bulunduğunuzda, sunucularda (Firebase/RevenueCat) tutulan e-posta ve abonelik bağınız en geç 30 gün içinde kalıcı olarak temizlenir.</span></li>
+                    </ul>
+                </div>
+
+                <!-- 9 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">9</span>
+                        Haklarınızı Kullanma Yöntemleri
+                    </h4>
+                    <p class="text-[15px] pl-11">KVKK haklarınızı kullanmak ve bilgi talebinde bulunmak için hello@pawsign.app adresine "KVKK Başvurusu" konulu bir e-posta gönderebilirsiniz. Başvurunuz yasal süre olan en geç 30 gün içinde sonuçlandırılacaktır.</p>
+                </div>
+
+                <!-- 10 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">10</span>
+                        Veri Güvenliği
+                    </h4>
+                    <p class="text-[15px] pl-11">Kişisel verilerinizin güvenliğini sağlamak amacıyla endüstri standardı şifreleme yöntemleri ve güvenli altyapılar (SSL/TLS) kullanılmaktadır.</p>
+                </div>
+
+                <!-- Footer note -->
+                <div class="pt-6 border-t border-slate-100 text-[13px] text-slate-400 text-center">
+                    Bu aydınlatma metni 6698 sayılı KVKK'ya uygun olarak hazırlanmış olup, güncel revizyon tarihi 16 Nisan 2026'dır
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-16 pb-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="PawSign.svg" alt="Paw Sign Logo" class="w-8 h-8 object-contain rounded-lg">
+                    <span class="text-lg font-extrabold tracking-tighter">PAW SIGN</span>
+                </a>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="gizlilik-sozlesmesi.html" target="_blank" class="text-slate-400 hover:text-white transition-colors text-sm">Gizlilik Politikası</a>
+                    <a href="kullanim-kosullari.html" target="_blank" class="text-slate-400 hover:text-white transition-colors text-sm">Kullanım Koşulları</a>
+                    <a href="kvkk-aydinlatma-metni.html" target="_blank" class="text-slate-400 hover:text-white transition-colors text-sm">KVKK</a>
+                    <a href="cerez-politikasi.html" target="_blank" class="text-slate-400 hover:text-white transition-colors text-sm">Çerez Politikası</a>
+                </div>
+                <p class="text-slate-500 text-sm">© 2026 PAW SIGN. Sağlıkla Kalın, Sözlerle Değil Gözlerle Bağlanın</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
