@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Sözleşmesi | Paw Sign</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+        :root {
+            --brand-teal: #38b2ac;
+            --brand-dark: #2c7a7b;
+            --soft-bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--soft-bg);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--brand-teal);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="text-slate-900 overflow-x-hidden">
+
+    <!-- Navigasyon -->
+    <nav class="fixed w-full z-[100] glass-nav border-b border-teal-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+                <div class="relative">
+                    <div
+                        class="absolute -inset-1 bg-teal-400 rounded-full blur opacity-25 group-hover:opacity-50 transition">
+                    </div>
+                    <img src="PawSign.svg" alt="Paw Sign Logo" class="relative w-10 h-10 object-contain rounded-lg">
+                </div>
+                <span class="text-xl font-extrabold tracking-tight text-slate-800">
+                    PAW<span class="text-[#38b2ac]">SIGN</span>
+                </span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-10 text-[15px] font-medium text-slate-600">
+                <a href="index.html" class="hover:text-[#38b2ac] transition-colors">Anasayfa</a>
+                <a href="index.html#iletisim" class="hover:text-[#38b2ac] transition-colors">İletişim</a>
+                <div class="h-4 w-[1px] bg-slate-200"></div>
+                <a href="index.html"
+                    class="bg-slate-900 text-white px-7 py-2.5 rounded-full font-semibold hover:bg-black transition shadow-lg shadow-slate-200">
+                    Hemen İndir
+                </a>
+            </div>
+
+            <button class="md:hidden text-slate-800">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Gizlilik Sözleşmesi Section -->
+    <section class="pt-32 pb-24 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-14">
+                <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">Gizlilik Sözleşmesi</h1>
+                <p class="mt-4 text-slate-500 text-sm">Son güncelleme: 16 Nisan 2026</p>
+            </div>
+
+            <div
+                class="bg-white rounded-[3rem] border border-teal-100 p-10 lg:p-14 shadow-sm space-y-10 text-slate-600 leading-relaxed">
+
+                <!-- Giriş -->
+                <p class="text-[15px] text-slate-600 leading-relaxed">
+                    İşbu Gizlilik Politikası, <strong>Paw Sign</strong> mobil uygulaması ve web sitesi kapsamında
+                    kullanıcıların kişisel verilerinin nasıl toplandığını, işlendiğini, kullanıldığını ve korunduğunu
+                    açıklamak amacıyla hazırlanmıştır. Paw Sign, bir evcil hayvan sağlığı takip uygulamasıdır. Temel
+                    hesap oluşturma işlemleri dışında hayvanlarınıza ait özel kayıtlar güvenliğiniz için
+                    <strong>cihazınızda yerel olarak saklanır</strong>. Verileriniz hiçbir zaman reklam şirketlerine
+                    satılmaz.
+                </p>
+
+                <!-- 1 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">1</span>
+                        Giriş
+                    </h4>
+                    <p class="text-[15px] pl-11">Paw Sign olarak kullanıcılarımızın gizliliğini en önemli
+                        önceliklerimizden biri olarak görüyoruz. Kişisel verileriniz, yürürlükteki mevzuata uygun
+                        şekilde ve yalnızca gerekli olduğu ölçüde işlenmektedir.</p>
+                </div>
+
+                <!-- 2 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">2</span>
+                        Toplanan Bilgiler
+                    </h4>
+                    <p class="text-[15px] pl-11 mb-3">Platform'u kullanmanız halinde aşağıdaki kişisel veriler
+                        toplanabilir:</p>
+                    <ul class="pl-11 space-y-2 text-[15px]">
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Kimlik
+                                    ve iletişim bilgileri:</strong> ad, soyad, e-posta adresi, telefon numarası</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 3 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">3</span>
+                        Toplanan Cihaz Verileri (Yerel Depolama)
+                    </h4>
+                    <p class="text-[15px] pl-11 mb-3">Aşağıdaki veriler varsayılan olarak yalnızca cihazınızda tutulur:
+                    </p>
+                    <ul class="pl-11 space-y-2 text-[15px]">
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Evcil hayvan profil
+                            bilgileri (isim, tür, cins, doğum tarihi)</li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Mama, aşı, parazit,
+                            ilaç, gözlem, beslenme, kilo, su, banyo, tıraş, tırnak, ağız-diş, kulak ve göz takip
+                            kayıtları</li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Eğitim rehber
+                            kayıtları ve aşama takibi</li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Evcil hayvan
+                            fotoğrafları (yerel galeri) ve dijital sağlık arşivi</li>
+                    </ul>
+                </div>
+
+                <!-- 4 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">4</span>
+                        Bilgilerin Kullanım Amaçları
+                    </h4>
+                    <ul class="pl-11 space-y-2 text-[15px]">
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Platform'un
+                            güvenliğinin sağlanması ve dolandırıcılık faaliyetlerinin önlenmesi</li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Hizmet kalitesinin
+                            artırılması ve kullanıcı deneyiminin iyileştirilmesi</li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Yasal
+                            yükümlülüklerin yerine getirilmesi</li>
+                    </ul>
+                </div>
+
+                <!-- 5 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">5</span>
+                        Bilgilerin Paylaşımı ve Üçüncü Taraf Hizmetler
+                    </h4>
+                    <p class="text-[15px] pl-11 mb-3">Paw Sign, kişisel verilerinizi reklam şirketlerine, analitik
+                        servislerine veri madenciliği amacıyla satmaz veya kiralamaz. Verileriniz yalnızca hizmetin
+                        sağlanabilmesi için zorunlu olan güvenilir hizmet sağlayıcılarla paylaşılır:</p>
+                    <ul class="pl-11 space-y-3 text-[15px]">
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>RevenueCat:</strong>
+                                Abonelik ve uygulama içi satın alma yönetimi — <a
+                                    href="https://www.revenuecat.com/privacy" target="_blank"
+                                    class="text-[#38b2ac] hover:underline">revenuecat.com/privacy</a></span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Firebase:</strong>
+                                Kimlik doğrulama, bulut veritabanı, profil ve uygulama altyapısı — <a
+                                    href="https://firebase.google.com/support/privacy" target="_blank"
+                                    class="text-[#38b2ac] hover:underline">firebase.google.com/support/privacy</a></span>
+                        </li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Bildirimler:</strong>
+                                Cihazda zamanlanan yerel hatırlatıcılar (Capacitor Local Notifications); uzaktan push
+                                (APNs/FCM) kullanılmaz.</span></li>
+                    </ul>
+                    <p class="mt-5 pl-11 text-[15px]">
+                        <strong>Not:</strong> Ödeme işlemleri Apple App Store / Google Play
+                        aracılığıyla gerçekleştirilir. Kredi kartı ve ödeme bilgileriniz Paw Sign tarafından
+                        kesinlikle görülmez ve saklanmaz.
+                    </p>
+                </div>
+
+                <!-- 6 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">6</span>
+                        Çocukların Gizliliği
+                    </h4>
+                    <p class="text-[15px] pl-11">Paw Sign, 13 yaşın altındaki çocuklara yönelik değildir ve bu yaş
+                        grubundan bilinçli olarak kişisel veri toplamaz.</p>
+                </div>
+
+                <!-- 7 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">7</span>
+                        Veri Saklama ve Silme
+                    </h4>
+                    <ul class="pl-11 space-y-3 text-[15px]">
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Yerel
+                                    veriler:</strong> Uygulamayı cihazınızdan kaldırdığınızda otomatik olarak
+                                silinir.</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Hesap
+                                    silme:</strong> Uygulama içi <em>Profil → Hesabımı Sil</em> butonu ile anında
+                                silebilirsiniz. Alternatif olarak <a href="mailto:hello@pawsign.app"
+                                    class="text-[#38b2ac] hover:underline">hello@pawsign.app</a> adresine
+                                yazabilirsiniz. Talebiniz en geç 30 gün içinde işleme alınır.</span></li>
+                    </ul>
+                </div>
+
+                <!-- 8 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">8</span>
+                        Politika Değişiklikleri
+                    </h4>
+                    <p class="text-[15px] pl-11">Paw Sign, işbu Gizlilik Politikası'nı güncelleme hakkını saklı tutar.
+                        Yapılan değişiklikler Platform'da yayımlandığı tarihte yürürlüğe girer.</p>
+                </div>
+
+                <!-- 9 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">9</span>
+                        İletişim
+                    </h4>
+                    <p class="text-[15px] pl-11">Gizlilik Politikası ile ilgili her türlü soru, itiraz ve veri silme
+                        talepleriniz için bizimle iletişime geçebilirsiniz:</p>
+                    <div class="pl-11 mt-3">
+                        <a href="mailto:hello@pawsign.app"
+                            class="inline-flex items-center gap-2 text-[#38b2ac] font-semibold hover:underline text-[15px]">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            hello@pawsign.app
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer note -->
+                <div class="pt-6 border-t border-slate-100 text-[13px] text-slate-400 text-center">
+                    Platform'u kullanarak işbu Gizlilik Politikası'nı kabul etmiş sayılırsınız.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white pt-16 pb-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="PawSign.svg" alt="Paw Sign Logo" class="w-8 h-8 object-contain rounded-lg">
+                    <span class="text-lg font-extrabold tracking-tighter">PAW SIGN</span>
+                </a>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="gizlilik-sozlesmesi.html" target="_blank" class="text-slate-400 hover:text-white transition-colors text-sm">Gizlilik Politikası</a>
+                    <a href="kullanim-kosullari.html" target="_blank" class="text-slate-400 hover:text-white transition-colors text-sm">Kullanım Koşulları</a>
+                    <a href="kvkk-aydinlatma-metni.html" target="_blank" class="text-slate-400 hover:text-white transition-colors text-sm">KVKK</a>
+                    <a href="cerez-politikasi.html" target="_blank" class="text-slate-400 hover:text-white transition-colors text-sm">Çerez Politikası</a>
+                </div>
+                <p class="text-slate-500 text-sm">© 2026 PAW SIGN. Sağlıkla Kalın, Sözlerle Değil Gözlerle Bağlanın</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
