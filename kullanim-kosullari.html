@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanım Koşulları | Paw Sign</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+        :root {
+            --brand-teal: #38b2ac;
+            --brand-dark: #2c7a7b;
+            --soft-bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--soft-bg);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--brand-teal);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="text-slate-900 overflow-x-hidden">
+
+    <!-- Navigasyon -->
+    <nav class="fixed w-full z-[100] glass-nav border-b border-teal-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-teal-400 rounded-full blur opacity-25 group-hover:opacity-50 transition"></div>
+                    <img src="PawSign.svg" alt="Paw Sign Logo" class="relative w-10 h-10 object-contain rounded-lg">
+                </div>
+                <span class="text-xl font-extrabold tracking-tight text-slate-800">
+                    PAW<span class="text-[#38b2ac]">SIGN</span>
+                </span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-10 text-[15px] font-medium text-slate-600">
+                <a href="index.html" class="hover:text-[#38b2ac] transition-colors">Anasayfa</a>
+                <a href="index.html#iletisim" class="hover:text-[#38b2ac] transition-colors">İletişim</a>
+                <div class="h-4 w-[1px] bg-slate-200"></div>
+                <a href="index.html"
+                    class="bg-slate-900 text-white px-7 py-2.5 rounded-full font-semibold hover:bg-black transition shadow-lg shadow-slate-200">
+                    Hemen İndir
+                </a>
+            </div>
+
+            <button class="md:hidden text-slate-800">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Kullanım Koşulları Section -->
+    <section class="pt-32 pb-24 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-14">
+                <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">Kullanım Koşulları</h1>
+                <p class="mt-4 text-slate-500 text-sm">Son Güncelleme Tarihi: 16 Nisan 2026</p>
+            </div>
+
+            <div class="bg-white rounded-[3rem] border border-teal-100 p-10 lg:p-14 shadow-sm space-y-10 text-slate-600 leading-relaxed">
+
+                <!-- 1 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">1</span>
+                        Taraflar ve Kabul
+                    </h4>
+                    <p class="text-[15px] pl-11">İşbu Kullanım Koşulları ("Sözleşme"), Paw Sign mobil uygulamasını ("Uygulama") cihazına indiren kişi ("Kullanıcı") ile Uygulama'nın geliştiricisi İrem Akay ("Geliştirici") arasında akdedilmiştir. Kullanıcı, Uygulama'yı cihazına indirerek ve hesap oluşturarak bu Sözleşme'de yer alan şartları okuduğunu, anladığını ve kabul ettiğini beyan eder.</p>
+                </div>
+
+                <!-- 2 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">2</span>
+                        Yaş Sınırı
+                    </h4>
+                    <p class="text-[15px] pl-11">Uygulama'yı kullanabilmek için en az 13 yaşında olmanız gerekmektedir. 13 yaşından küçük kullanıcıların Uygulama'yı kullanması yasaktır. Kullanıcı, kayıt olarak bu yaş şartını sağladığını taahhüt eder.</p>
+                </div>
+
+                <!-- 3 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">3</span>
+                        Hizmetin Niteliği
+                    </h4>
+                    <p class="text-[15px] pl-11">Paw Sign; evcil hayvan sahiplerinin aşı, mama, bakım, eğitim ve genel sağlık verilerini kişisel olarak kaydedip takip edebilmeleri için tasarlanmış bağımsız bir dijital kayıt ve hatırlatma aracıdır. Uygulama bir sosyal ağ, mesajlaşma platformu veya profesyonel veterinerlik hizmeti değildir.</p>
+                </div>
+
+                <!-- 4 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">4</span>
+                        Tıbbi ve Veterinerlik Sorumluluk Reddi (Önemli Uyarı)
+                    </h4>
+                    <ul class="pl-11 space-y-2 text-[15px]">
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Paw Sign, herhangi bir tıbbi teşhis, tedavi veya profesyonel veterinerlik tavsiyesi sunmaz.</li>
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Uygulama içindeki aşı, ilaç veya bakım hatırlatmaları tamamen Kullanıcı'nın kendi girdiği verilere veya genel şablonlara dayanır.</li>
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Evcil hayvanın sağlık durumu, aşı takvimi veya ilaç dozajı konusunda tek yetkili merci veteriner hekimlerdir. Cihaz/sistem kaynaklı nedenlerle hatırlatmaların gecikmesi, iletilememesi veya Kullanıcı tarafından yanlış girilmesi sonucunda evcil hayvanın sağlığında oluşabilecek hiçbir olumsuz durumdan Geliştirici sorumlu tutulamaz.</li>
+                    </ul>
+                </div>
+
+                <!-- 5 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">5</span>
+                        Hesap Oluşturma, Veri Depolama ve Sorumluluk Reddi
+                    </h4>
+                    <ul class="pl-11 space-y-3 text-[15px]">
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Hesap ve Kimlik Doğrulama:</strong> Kullanıcılar, Uygulama'ya e-posta adresi ve şifre ile kayıt olurlar. Bu kimlik doğrulama işlemleri güvenli bir şekilde Firebase altyapısı üzerinden gerçekleştirilir.</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Yerel Veri Depolama:</strong> Paw Sign, evcil hayvanınıza ait sağlık, aşı, mama kayıtlarını ve fotoğrafları varsayılan olarak yalnızca Kullanıcı'nın kendi cihazının hafızasında (yerel olarak) saklar. Hayvan verileri için bulut (cloud) senkronizasyonu bulunmamaktadır.</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Veri Kaybı:</strong> Veriler cihazda tutulduğu için; cihazın bozulması, çalınması veya Uygulama'nın cihazdan silinmesi durumunda yaşanacak veri kayıplarından Geliştirici sorumlu tutulamaz. Verilerini korumak Kullanıcı'nın sorumluluğundadır.</span></li>
+                    </ul>
+                </div>
+
+                <!-- 6 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">6</span>
+                        Abonelik, Otomatik Yenileme ve İade Koşulları
+                    </h4>
+                    <ul class="pl-11 space-y-3 text-[15px]">
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Paw Sign içerisinde sunulan Premium abonelikler (aylık/yıllık vb.) ve uygulama içi satın almalar, doğrudan Apple App Store veya Google Play Store altyapısı (RevenueCat aracılığıyla) üzerinden yönetilir.</li>
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Otomatik Yenileme:</strong> Abonelikler, mevcut dönemin bitiminden en az 24 saat önce iptal edilmediği sürece otomatik olarak yenilenir. Yenileme ücreti, dönem bitimine 24 saat kala Kullanıcı'nın Apple/Google hesabından tahsil edilir.</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>İptal ve İade:</strong> Kullanıcı, aboneliğini dilediği zaman cihazının App Store/Google Play hesap ayarlarından iptal edebilir. İade (refund) işlemleri doğrudan Apple ve Google'ın kendi mağaza politikalarına tabidir; Geliştirici'nin ödeme sistemlerine müdahale etme veya iade yapma yetkisi bulunmamaktadır.</span></li>
+                    </ul>
+                </div>
+
+                <!-- 7 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">7</span>
+                        Gizlilik ve Kişisel Veriler
+                    </h4>
+                    <p class="text-[15px] pl-11">Uygulama'nın kullanımı sırasında toplanan kişisel veriler, yürürlükteki mevzuata uygun olarak işlenmektedir. Verilerinizin nasıl işlendiği ve korunduğuna dair detaylı bilgi için lütfen <a href="gizlilik-sozlesmesi.html" target="_blank" class="text-[#38b2ac] hover:underline">Gizlilik Politikası</a>'nı inceleyiniz.</p>
+                </div>
+
+                <!-- 8 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">8</span>
+                        Kullanım Kuralları ve Fikri Mülkiyet
+                    </h4>
+                    <ul class="pl-11 space-y-2 text-[15px]">
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Uygulama'nın tüm yazılım kodları, tasarımı, arayüzü ve logoları Geliştirici'ye aittir ve telif hakları yasalarınca korunmaktadır. İzinsiz çoğaltılamaz, kopyalanamaz veya tersine mühendislik (reverse engineering) yapılamaz.</li>
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Uygulama altyapısını bozacak, siber güvenlik tehdidi oluşturacak şekilde kullanımlar yasaktır. Tespiti halinde hesaba erişim kalıcı olarak durdurulabilir.</li>
+                    </ul>
+                </div>
+
+                <!-- 9 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">9</span>
+                        Tüketici Hakları ve Sorumluluk Sınırı
+                    </h4>
+                    <ul class="pl-11 space-y-2 text-[15px]">
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Uygulama Kullanıcı'ya "olduğu gibi" sunulmaktadır. Ancak, 6502 sayılı Tüketicinin Korunması Hakkında Kanun ve ilgili mevzuattan doğan emredici tüketici hakları saklıdır.</li>
+                        <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>Geliştirici, ağır kusuru veya kastı dışındaki teknik aksaklıklardan (sunucu arızaları, cihaz uyuşmazlıkları) doğacak dolaylı zararlardan sorumlu tutulamaz.</li>
+                    </ul>
+                </div>
+
+                <!-- 10 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">10</span>
+                        Bölünebilirlik (Ayrılabilirlik)
+                    </h4>
+                    <p class="text-[15px] pl-11">İşbu Sözleşme'nin herhangi bir maddesinin yasalar çerçevesinde geçersiz veya uygulanamaz sayılması halinde, bu durum Sözleşme'nin diğer maddelerinin geçerliliğini ve uygulanabilirliğini etkilemez.</p>
+                </div>
+
+                <!-- 11 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">11</span>
+                        Sözleşme Değişiklikleri
+                    </h4>
+                    <p class="text-[15px] pl-11">Geliştirici, yasal gereklilikler veya yeni özelliklerin eklenmesi sebebiyle bu Sözleşme'yi güncelleyebilir. Kullanıcıların haklarını etkileyecek önemli değişiklikler, yürürlüğe girmeden makul bir süre önce e-posta veya Uygulama içi bildirim yoluyla Kullanıcı'ya duyurulacaktır.</p>
+                </div>
+
+                <!-- 12 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">12</span>
+                        Uygulanacak Hukuk ve Yetki
+                    </h4>
+                    <p class="text-[15px] pl-11">İşbu Kullanım Koşulları Türkiye Cumhuriyeti kanunlarına tabidir. Taraflar arasında doğabilecek uyuşmazlıklarda İstanbul Mahkemeleri ve İcra Daireleri ile yasal sınırlar dahilindeki Tüketici Hakem Heyetleri yetkilidir.</p>
+                </div>
+
+                <!-- İletişim -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-[#38b2ac]"></i>
+                        İletişim
+                    </h4>
+                    <p class="text-[15px] pl-8 mb-3">Kullanım Koşulları ile ilgili sorularınız için bizimle iletişime geçebilirsiniz:</p>
+                    <div class="pl-8">
+                        <a href="mailto:hello@pawsign.app"
+                            class="inline-flex items-center gap-2 text-[#38b2ac] font-semibold hover:underline text-[15px]">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            hello@pawsign.app
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer note -->
+                <div class="pt-6 border-t border-slate-100 text-[13px] text-slate-400 text-center">
+                    Uygulamayı kullanarak işbu Kullanım Koşulları'nı kabul etmiş sayılırsınız.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white pt-16 pb-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="PawSign.svg" alt="Paw Sign Logo" class="w-8 h-8 object-contain rounded-lg">
+                    <span class="text-lg font-extrabold tracking-tighter">PAW SIGN</span>
+                </a>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="gizlilik-sozlesmesi.html" target="_blank" class="text-slate-400 hover:text-white transition-colors text-sm">Gizlilik Politikası</a>
+                    <a href="kullanim-kosullari.html" target="_blank" class="text-slate-400 hover:text-white transition-colors text-sm">Kullanım Koşulları</a>
+                    <a href="kvkk-aydinlatma-metni.html" target="_blank" class="text-slate-400 hover:text-white transition-colors text-sm">KVKK</a>
+                    <a href="cerez-politikasi.html" target="_blank" class="text-slate-400 hover:text-white transition-colors text-sm">Çerez Politikası</a>
+                </div>
+                <p class="text-slate-500 text-sm">© 2026 PAW SIGN. Sağlıkla Kalın, Sözlerle Değil Gözlerle Bağlanın</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

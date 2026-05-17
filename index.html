@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Sign — Care, Health & Hand Signs</title>
+    <meta name="description" content="Built for dogs who listen with their eyes. Keep health records, care routines, and hand sign guides organized in one clear place.">
+    <link rel="canonical" href="https://pawsign.app/" />
+    <link rel="alternate" hreflang="en" href="https://pawsign.app/" />
+    <link rel="alternate" hreflang="tr" href="https://pawsign.app/tr/" />
+    <link rel="alternate" hreflang="x-default" href="https://pawsign.app/" />
+    <meta property="og:title" content="Paw Sign — Built for dogs who listen with their eyes" />
+    <meta property="og:description" content="Health records, care routines, and hand sign guides — organized in one clear place." />
+    <meta property="og:url" content="https://pawsign.app/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Paw Sign — Built for dogs who listen with their eyes" />
+    <meta name="twitter:description" content="Health records, care routines, and hand sign guides — organized in one clear place." />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+        :root {
+            --brand-teal: #38b2ac;
+            --brand-dark: #2c7a7b;
+            --soft-bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--soft-bg);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(56, 178, 172, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+        }
+
+        .premium-card {
+            background: white;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(56, 178, 172, 0.1);
+        }
+
+        .premium-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(44, 122, 123, 0.08);
+            border-color: rgba(56, 178, 172, 0.3);
+        }
+
+        .floating-anim {
+            animation: floating 6s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .text-balance {
+            text-wrap: balance;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--brand-teal);
+            border-radius: 10px;
+        }
+
+        .lumen-pulse {
+            animation: lumen-pulse 2s infinite;
+        }
+
+        @keyframes lumen-pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(56, 178, 172, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(56, 178, 172, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(56, 178, 172, 0);
+            }
+        }
+    </style>
+</head>
+
+<body class="text-slate-900 overflow-x-hidden">
+
+    <!-- Navigasyon -->
+    <nav class="fixed w-full z-[100] glass-nav border-b border-teal-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4 group cursor-pointer">
+                <div class="relative">
+                    <div
+                        class="absolute -inset-1 bg-teal-400 rounded-full blur opacity-25 group-hover:opacity-50 transition">
+                    </div>
+                    <!-- Logo görseli buraya eklendi -->
+                    <img src="PawSign.svg" alt="Paw Sign Logo" class="relative w-10 h-10 object-contain rounded-lg">
+                </div>
+                <span class="text-xl font-extrabold tracking-tight text-slate-800">
+                    PAW<span class="text-[#38b2ac]">SIGN</span>
+                </span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-10 text-[15px] font-medium text-slate-600">
+                <a href="#home" class="hover:text-[#38b2ac] transition-colors">Home</a>
+                <a href="#about" class="hover:text-[#38b2ac] transition-colors">Why Paw Sign?</a>
+                <a href="#services" class="hover:text-[#38b2ac] transition-colors">Features</a>
+                <a href="#for-deaf-dogs" class="hover:text-[#38b2ac] transition-colors">For Deaf Dogs</a>
+                <a href="#iletisim" class="hover:text-[#38b2ac] transition-colors">Contact</a>
+                <div class="h-4 w-[1px] bg-slate-200"></div>
+                <a href="/tr/" class="text-sm font-semibold text-slate-500 hover:text-[#38b2ac] transition-colors">TR</a>
+                <button
+                    class="bg-slate-900 text-white px-7 py-2.5 rounded-full font-semibold hover:bg-black transition shadow-lg shadow-slate-200">
+                    Download
+                </button>
+            </div>
+
+            <button class="md:hidden text-slate-800">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-24 pb-6 px-6 hero-gradient">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div class="text-center lg:text-left">
+                <div
+                    class="inline-flex items-center gap-2 bg-teal-50 border border-teal-100 text-[#2c7a7b] px-4 py-1.5 rounded-full text-xs font-bold mb-8 uppercase tracking-widest">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
+                    </span>
+                    Health records, care routines, and hand sign guides — organized in one clear place.
+                </div>
+                <h1 class="text-6xl lg:text-7xl font-[800] text-slate-900 leading-[1.1] mb-8 text-balance">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#38b2ac] to-[#2c7a7b]">Built for dogs</span> who listen with their eyes.
+                </h1>
+                <p class="text-2xl text-slate-600 font-medium mb-12 max-w-xl mx-auto lg:mx-0 leading-relaxed italic">
+                    Paw Sign helps you care for your dog with more clarity — from health records and daily care routines to hand signs and visual command practices.
+                </p>
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                    <!-- App Store Butonu -->
+                    <a href="#"
+                        class="group flex items-center justify-center gap-3 bg-black text-white px-5 py-2.5 rounded-xl hover:bg-slate-800 hover:-translate-y-1 transition-all duration-300 shadow-xl shadow-slate-300 w-[190px]"
+                        style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+                        <svg viewBox="0 0 384 512" fill="currentColor" class="w-8 h-8">
+                            <path
+                                d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+                        </svg>
+                        <div class="text-left flex-1">
+                            <p class="text-[10px] text-white/90 leading-none mb-1">Download on the</p>
+                            <p class="text-[18px] font-semibold leading-none tracking-tight">App Store</p>
+                        </div>
+                    </a>
+
+                    <!-- Learn More Butonu -->
+                    <a href="#about"
+                        class="group flex items-center justify-center gap-3 bg-white text-slate-800 px-5 py-2.5 rounded-xl hover:bg-slate-50 hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-slate-200 border border-slate-200 w-[170px]"
+                        style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+                        <div class="text-center flex-1">
+                            <p class="text-[17px] font-semibold leading-none tracking-tight">Learn More</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Neden Paw Sign Section -->
+    <section id="about" class="py-8 px-6 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-24 items-center mb-24">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-teal-50 rounded-[4rem] rotate-3 scale-105"></div>
+                    <div
+                        class="relative bg-[#f8fafc] rounded-[4rem] p-8 border border-white shadow-inner mx-auto max-w-lg">
+                        <div class="columns-2 md:columns-3 gap-4">
+                            <img src="image1.png" alt="Paw Care 1"
+                                class="rounded-2xl object-cover w-full mb-4 shadow-lg hover:shadow-xl transition break-inside-avoid"
+                                style="aspect-ratio: 9/16;">
+                            <img src="image2.png" alt="Paw Care 2"
+                                class="rounded-2xl object-cover w-full mb-4 shadow-lg hover:shadow-xl transition break-inside-avoid"
+                                style="aspect-ratio: 9/20;">
+                            <img src="image3.png" alt="Paw Care 3"
+                                class="rounded-2xl object-cover w-full mb-4 shadow-lg hover:shadow-xl transition break-inside-avoid"
+                                style="aspect-ratio: 9/14;">
+                            <img src="image4.png" alt="Paw Care 4"
+                                class="rounded-2xl object-cover w-full mb-4 shadow-lg hover:shadow-xl transition break-inside-avoid"
+                                style="aspect-ratio: 9/18;">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-sm font-extrabold text-[#38b2ac] uppercase tracking-[0.3em] mb-6">Why Paw Sign?
+                    </h2>
+                    <h3 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">
+                        Designed with deaf dogs in mind
+                    </h3>
+                    <p class="text-lg text-slate-500 mb-12 leading-relaxed">
+                        Created with deaf dogs and dogs with hearing difficulties in mind, Paw Sign is also useful for every dog parent who wants to build clearer daily routines through hand signs, body language, and organized care tracking.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div
+                            class="group flex gap-6 items-start p-6 rounded-[2rem] bg-white border border-teal-100 hover:bg-teal-50/30 transition-all">
+                            <div
+                                class="w-12 h-12 shrink-0 bg-teal-50 rounded-xl flex items-center justify-center text-[#38b2ac]">
+                                <i data-lucide="zap" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900 mb-1">Visual Communication Guide</h4>
+                                <p class="text-slate-500 text-sm leading-relaxed">Explore simple hand sign and visual command practices designed to support clearer communication with your dog.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="group flex gap-6 items-start p-6 rounded-[2rem] bg-white border border-teal-100 hover:bg-teal-50/30 transition-all">
+                            <div
+                                class="w-12 h-12 shrink-0 bg-teal-50 rounded-xl flex items-center justify-center text-[#38b2ac]">
+                                <i data-lucide="activity" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900 mb-1">Health Records</h4>
+                                <p class="text-slate-500 text-sm leading-relaxed">Keep vaccination records, medication notes, parasite care, observation logs, and important health files organized in one place.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stratejik Özellik Kartları -->
+            <div id="services" class="grid md:grid-cols-2 gap-8">
+                <div class="premium-card p-10 rounded-[3rem]">
+                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mb-8 text-[#38b2ac]">
+                        <i data-lucide="calendar" class="w-10 h-10"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Care Calendar</h4>
+                    <p class="text-slate-500 leading-relaxed font-medium">Track nutrition, water, weight, bath days, grooming, nails, oral care, eye care, ear care, and skin checks.</p>
+                </div>
+
+                <div class="premium-card p-10 rounded-[3rem] bg-slate-900 text-white border-none shadow-2xl">
+                    <div
+                        class="w-16 h-16 bg-teal-500 rounded-2xl flex items-center justify-center mb-8 text-white lumen-pulse">
+                        <i data-lucide="bell" class="w-10 h-10"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Reminders with Paw Sign Pro</h4>
+                    <p class="text-slate-300 leading-relaxed font-medium">
+                        Create reminders for care and health routines such as vaccination time, medication, bath days, and other important records.
+                    </p>
+                </div>
+
+                <div class="premium-card p-10 rounded-[3rem]">
+                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mb-8 text-[#38b2ac]">
+                        <i data-lucide="file-text" class="w-10 h-10"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Digital Health Archive</h4>
+                    <p class="text-slate-500 leading-relaxed font-medium">
+                        Save photos, documents, PDFs, health cards, checkup files, and veterinarian notes inside your dog’s profile.
+                    </p>
+                </div>
+
+                <div class="premium-card p-10 rounded-[3rem]">
+                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mb-8 text-[#38b2ac]">
+                        <i data-lucide="share-2" class="w-10 h-10"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Easy Sharing</h4>
+                    <p class="text-slate-500 leading-relaxed font-medium">
+                        Share prepared summary information with your veterinarian or caregivers via WhatsApp or email when needed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Deaf Dogs Section -->
+    <section id="for-deaf-dogs" class="py-16 px-6 bg-[#f8fafc]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-sm font-extrabold text-[#38b2ac] uppercase tracking-[0.3em] mb-4">Designed with deaf dogs in mind</h2>
+            <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-8">
+                Paw Sign was created from the need to support clearer visual communication with dogs who experience hearing difficulties.
+            </h3>
+            <p class="text-lg text-slate-600 mb-10 leading-relaxed text-balance">
+                The app includes hand sign and visual command practice guides. This section does not replace professional training; it is designed as a practical helper to make daily repetitions more organized and easier to follow.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-6 text-left">
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 flex gap-4 items-start">
+                    <div class="mt-1 w-2 h-2 rounded-full bg-[#38b2ac] shrink-0"></div>
+                    <p class="text-slate-600 font-medium">Hand sign practices for basic commands</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 flex gap-4 items-start">
+                    <div class="mt-1 w-2 h-2 rounded-full bg-[#38b2ac] shrink-0"></div>
+                    <p class="text-slate-600 font-medium">Short visual guides</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 flex gap-4 items-start">
+                    <div class="mt-1 w-2 h-2 rounded-full bg-[#38b2ac] shrink-0"></div>
+                    <p class="text-slate-600 font-medium">Stronger communication support for dogs with hearing difficulties</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 flex gap-4 items-start">
+                    <div class="mt-1 w-2 h-2 rounded-full bg-[#38b2ac] shrink-0"></div>
+                    <p class="text-slate-600 font-medium">Sign and body-language focused daily practices for all dogs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who is it for Section -->
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-extrabold text-slate-900 mb-6 text-center">Who is Paw Sign for?</h3>
+            <p class="text-lg text-slate-600 mb-10 text-center">Paw Sign is designed for dog parents who want to:</p>
+            <div class="grid md:grid-cols-2 gap-y-4 gap-x-8">
+                <div class="flex items-center gap-3">
+                    <i data-lucide="check-circle-2" class="w-5 h-5 text-[#38b2ac]"></i>
+                    <span class="text-slate-600">Keep health and care records organized</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i data-lucide="check-circle-2" class="w-5 h-5 text-[#38b2ac]"></i>
+                    <span class="text-slate-600">Track vaccination, medication, parasite care, water, weight, and grooming</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i data-lucide="check-circle-2" class="w-5 h-5 text-[#38b2ac]"></i>
+                    <span class="text-slate-600">Support visual communication with a deaf dog or a dog with hearing difficulties</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i data-lucide="check-circle-2" class="w-5 h-5 text-[#38b2ac]"></i>
+                    <span class="text-slate-600">Build daily routines with hand signs and short visual command practices</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i data-lucide="check-circle-2" class="w-5 h-5 text-[#38b2ac]"></i>
+                    <span class="text-slate-600">Keep important files and notes easy to find</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i data-lucide="check-circle-2" class="w-5 h-5 text-[#38b2ac]"></i>
+                    <span class="text-slate-600">Share dog care information when needed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="iletisim" class="bg-slate-900 text-white pt-24 pb-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 bg-slate-800/50 p-6 md:p-8 rounded-3xl border border-slate-700/50">
+                <h5 class="font-bold mb-3 uppercase tracking-widest text-xs text-teal-400">Important Note</h5>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Paw Sign is a record-keeping, tracking, and practical guide app. It does not provide veterinary advice, diagnosis, treatment, emergency health guidance, or professional dog training services. For health-related concerns, please consult your veterinarian. For specific behavior or training situations, please consult qualified professionals.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 mb-8">
+                        <img src="PawSign.svg" alt="Paw Sign Logo" class="w-10 h-10 object-contain rounded-lg">
+                        <span class="text-2xl font-extrabold tracking-tighter">PAW SIGN</span>
+                    </div>
+                    <p class="text-slate-400 max-w-sm mb-8 leading-relaxed">
+                        Health records, care routines, and hand sign guides — organized in one clear place.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#"
+                            class="flex items-center gap-2 bg-slate-800 text-white px-4 py-2 rounded-xl hover:bg-black transition-all border border-slate-700 w-[140px]"
+                            style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+                            <svg viewBox="0 0 384 512" fill="currentColor" class="w-6 h-6">
+                                <path
+                                    d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+                            </svg>
+                            <div class="text-left flex-1">
+                                <p class="text-[8px] text-slate-300 leading-none mb-0.5">Download on the</p>
+                                <p class="text-[14px] font-semibold leading-none tracking-tight">App Store</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 uppercase tracking-widest text-xs text-teal-400">Features</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li>Health Records</li>
+                        <li>Care Calendar</li>
+                        <li>Visual Communication Guide</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 uppercase tracking-widest text-xs text-teal-400">Links</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+    <li><a href="mailto:hello@pawsign.app" class="hover:text-teal-400 transition-colors">hello@pawsign.app</a></li>
+    <li><a href="/tr/gizlilik-sozlesmesi.html" class="hover:text-teal-400 transition-colors">Privacy Policy</a></li>
+    <li><a href="/tr/kullanim-kosullari.html" class="hover:text-teal-400 transition-colors">Terms of Use</a></li>
+    <li><a href="/tr/cerez-politikasi.html" class="hover:text-teal-400 transition-colors">Cookie Policy</a></li>
+    <li><a href="/tr/kvkk-aydinlatma-metni.html" class="hover:text-teal-400 transition-colors">KVKK / Turkish Privacy Notice</a></li>
+    <li><a href="mailto:hello@pawsign.app" class="hover:text-teal-400 transition-colors">Support</a></li>
+    <li><a href="/tr/" class="hover:text-teal-400 transition-colors">Türkçe</a></li>
+</ul>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-slate-800 text-center md:text-left text-sm text-slate-500">
+                <p>© 2026 PAW SIGN. Built for dogs who listen with their eyes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Çerez Onay Bannerı -->
+    <div id="cookie-banner"
+        class="fixed bottom-6 left-6 right-6 md:left-auto md:right-8 md:max-w-md z-[200] transform translate-y-20 opacity-0 transition-all duration-700 ease-out pointer-events-none">
+        <div
+            class="bg-white/80 backdrop-blur-xl border border-teal-100 p-6 rounded-[2rem] shadow-2xl shadow-teal-900/10">
+            <div class="flex items-start gap-4 mb-4">
+                <div class="w-10 h-10 bg-teal-50 rounded-xl flex items-center justify-center text-[#38b2ac] shrink-0">
+                    <i data-lucide="cookie" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h5 class="font-bold text-slate-900 text-sm mb-1">Cookie Usage</h5>
+                    <p class="text-slate-500 text-xs leading-relaxed">
+                        We use cookies to improve your experience and understand how our website is used. <a
+                            href="/tr/cerez-politikasi.html" target="_blank"
+                            class="text-[#38b2ac] font-bold hover:underline">Learn More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="flex gap-3">
+                <button id="accept-cookies"
+                    class="flex-1 bg-slate-900 text-white text-xs font-bold py-3 rounded-xl hover:bg-black transition-all">Accept</button>
+                <button id="reject-cookies"
+                    class="flex-1 bg-white text-slate-600 text-xs font-bold py-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition-all">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        // Çerez Bannerı Kontrolü
+        document.addEventListener('DOMContentLoaded', () => {
+            const banner = document.getElementById('cookie-banner');
+            const acceptBtn = document.getElementById('accept-cookies');
+            const rejectBtn = document.getElementById('reject-cookies');
+
+            // Daha önce seçim yapılmış mı?
+            const cookieChoice = localStorage.getItem('pawsign_cookie_choice');
+
+            if (!cookieChoice) {
+                // Seçim yapılmamışsa banner'ı göster (yavaşça yukarı kayarak)
+                setTimeout(() => {
+                    banner.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+                }, 1000);
+            }
+
+            const closeBanner = (choice) => {
+                localStorage.setItem('pawsign_cookie_choice', choice);
+                banner.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+            };
+
+            acceptBtn.addEventListener('click', () => closeBanner('accepted'));
+            rejectBtn.addEventListener('click', () => closeBanner('rejected'));
+        });
+    </script>
+</body>
+
+</html>
