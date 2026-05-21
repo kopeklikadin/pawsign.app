@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Silme | Paw Sign</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+        :root {
+            --brand-teal: #38b2ac;
+            --brand-dark: #2c7a7b;
+            --soft-bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--soft-bg);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--brand-teal);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="text-slate-900 overflow-x-hidden">
+
+    <!-- Navigasyon -->
+    <nav class="fixed w-full z-[100] glass-nav border-b border-teal-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+                <div class="relative">
+                    <div
+                        class="absolute -inset-1 bg-teal-400 rounded-full blur opacity-25 group-hover:opacity-50 transition">
+                    </div>
+                    <img src="../PawSign.svg" alt="Paw Sign Logo" class="relative w-10 h-10 object-contain rounded-lg">
+                </div>
+                <span class="text-xl font-extrabold tracking-tight text-slate-800">
+                    PAW<span class="text-[#38b2ac]">SIGN</span>
+                </span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-10 text-[15px] font-medium text-slate-600">
+                <a href="index.html" class="hover:text-[#38b2ac] transition-colors">Anasayfa</a>
+                <a href="index.html#iletisim" class="hover:text-[#38b2ac] transition-colors">İletişim</a>
+                <div class="h-4 w-[1px] bg-slate-200"></div>
+                <a href="index.html"
+                    class="bg-slate-900 text-white px-7 py-2.5 rounded-full font-semibold hover:bg-black transition shadow-lg shadow-slate-200">
+                    Hemen İndir
+                </a>
+            </div>
+
+            <button class="md:hidden text-slate-800">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hesap Silme Section -->
+    <section class="pt-32 pb-24 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-14">
+                <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">Hesap Silme</h1>
+                <p class="mt-4 text-slate-500 text-sm">Son güncelleme: 21 Mayıs 2026</p>
+            </div>
+
+            <div
+                class="bg-white rounded-[3rem] border border-teal-100 p-10 lg:p-14 shadow-sm space-y-10 text-slate-600 leading-relaxed">
+
+                <!-- Giriş -->
+                <p class="text-[15px] text-slate-600 leading-relaxed">
+                    <strong>Paw Sign</strong>'de kişisel verilerinizi yönetme hakkınıza saygı duyuyoruz. Bu rehber, hesabınızı ve ilişkili verilerinizi silme talebinde bulunmanız ve bundan sonra ne olacağı hakkında bilgiler sağlar.
+                </p>
+
+                <!-- Önemli Mesaj -->
+                <div class="bg-red-50 border border-red-200 rounded-2xl p-8">
+                    <p class="text-[15px] text-red-900 leading-relaxed mb-4">
+                        <strong>Seni kaybetmek istemiyoruz ama senin kararına saygı duyuyoruz.</strong>
+                    </p>
+                    <p class="text-[15px] text-red-800 leading-relaxed">
+                        Hesabını sildiğinde, tüm antrenman geçmişi, sağlık kayıtları, bakım kayıtları ve kişisel notların Paw Sign'den kaldırılacak.
+                    </p>
+                </div>
+
+                <!-- Neleri Silecek -->
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 text-red-600">NELERI SILECEK</h3>
+                    <ul class="space-y-2 text-[15px]">
+                        <li class="flex items-start gap-3"><span
+                                class="mt-1 w-5 h-5 rounded flex items-center justify-center bg-red-100 text-red-600 font-bold shrink-0 text-xs">✓</span><span>Antrenman geçmişi ve ilerleme</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="mt-1 w-5 h-5 rounded flex items-center justify-center bg-red-100 text-red-600 font-bold shrink-0 text-xs">✓</span><span>Sağlık takip kayıtları</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="mt-1 w-5 h-5 rounded flex items-center justify-center bg-red-100 text-red-600 font-bold shrink-0 text-xs">✓</span><span>Bakım takibi ve kayıtlar</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="mt-1 w-5 h-5 rounded flex items-center justify-center bg-red-100 text-red-600 font-bold shrink-0 text-xs">✓</span><span>Hatırlatıcılar</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="mt-1 w-5 h-5 rounded flex items-center justify-center bg-slate-100 text-slate-600 font-bold shrink-0 text-xs">•</span><span>Kaydedilen rehberler ve kişisel notlar</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="mt-1 w-5 h-5 rounded flex items-center justify-center bg-red-100 text-red-600 font-bold shrink-0 text-xs">✓</span><span>Köpeğin profili ve ayarları</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="mt-1 w-5 h-5 rounded flex items-center justify-center bg-red-100 text-red-600 font-bold shrink-0 text-xs">✓</span><span>Tüm hesap verileri</span></li>
+                    </ul>
+                </div>
+
+                <!-- Sonra Ne Olur -->
+                <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6">
+                    <h3 class="text-lg font-bold text-amber-900 mb-3">SONRA NE OLUR?</h3>
+                    <p class="text-[15px] text-amber-900">
+                        Hesabın ve tüm verilerin kalıcı olarak silinecek.
+                    </p>
+                </div>
+
+                <!-- 1 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">1</span>
+                        Hesabınızı Nasıl Silebilirsiniz
+                    </h4>
+                    <p class="text-[15px] pl-11 mb-3">Paw Sign hesabınızı silmek için:</p>
+                    <ul class="pl-11 space-y-2 text-[15px]">
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span>Paw Sign uygulamasını açın</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span>Ayarlar bölümüne gidin (genellikle ana menü veya profil bölümünde bulunur)</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span>"Hesabı Sil" veya "Hesap Ayarları" seçeneğini seçin</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span>Onay adımlarını takip edin</span></li>
+                    </ul>
+                </div>
+
+                <!-- 2 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">2</span>
+                        Ne Silinir
+                    </h4>
+                    <p class="text-[15px] pl-11 mb-3">Paw Sign hesabınızı sildiğinizde:</p>
+                    <ul class="pl-11 space-y-2 text-[15px]">
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Hesap profiliniz:</strong> E-posta adresinizle ilişkili tüm giriş kimlik bilgileri ve hesap bilgileri</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Bulut üzerinde depolanan veriler:</strong> Sunucularımızda depolanan herhangi bir yedek veya senkronize edilen bilgiler</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Kişisel bilgiler:</strong> Adınız, e-posta, telefon numarası ve diğer tanımlayıcı detaylar</span></li>
+                    </ul>
+                </div>
+
+                <!-- 3 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">3</span>
+                        Silme Sonrası Geriye Kalan Veriler
+                    </h4>
+                    <p class="text-[15px] pl-11 mb-3">Lütfen aşağıdakileri göz önünde bulundurun:</p>
+                    <ul class="pl-11 space-y-2 text-[15px]">
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Cihaz üzerindeki yerel veriler:</strong> Yalnızca cihazınızın yerel depolama alanında saklanan bilgiler, uygulamayı manuel olarak temizleyene veya kaldırana kadar cihazınızda kalacaktır</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Yasal kayıtlar:</strong> Vergi, hukuki veya uyum amacıyla yasa tarafından gerekli olduğunda minimal veriler saklanabilir</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Anonimleştirilmiş analitiği:</strong> Hizmetimizi geliştirmek için tamamen anonimleştirilmiş kullanım verileri saklanabilir</span></li>
+                    </ul>
+                </div>
+
+                <!-- 4 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">4</span>
+                        Hesap Silme Süreci
+                    </h4>
+                    <p class="text-[15px] pl-11">Hesap silme talebinde bulunduğunuzda, çoğu veri anında silinir. Ancak bazı veriler yedek sistemlerimizden tamamen silinmesi için <strong>30 güne kadar</strong> sürebilir. Bu gecikme, yanlışlıkla silinen hesabınızı kurtaramıyorsanız geri yükleyebilmemiz için mevcuttur.</p>
+                </div>
+
+                <!-- 5 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">5</span>
+                        E-posta Yoluyla Silme Talebinde Bulunma
+                    </h4>
+                    <p class="text-[15px] pl-11 mb-3">Uygulama aracılığıyla hesabınızı silemiyorsanız, doğrudan bizimle iletişime geçebilirsiniz:</p>
+                    <p class="text-[15px] pl-11"><strong>E-posta:</strong> <a href="mailto:hello@pawsign.app" class="text-[#38b2ac] hover:underline">hello@pawsign.app</a></p>
+                    <p class="text-[15px] pl-11 mt-2">Hesap e-posta adresinizi belirtin ve hesap silme talebinde bulunun. İşlem için lütfen 5-7 iş günü bekleyin.</p>
+                </div>
+
+                <!-- 6 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">6</span>
+                        Geri Döndürülemezlik
+                    </h4>
+                    <p class="text-[15px] pl-11"><strong>Önemli:</strong> Hesap silme kalıcı ve geri döndürülemez bir işlemdir. Hesabınız silindikten sonra verilerinizi kurtaramayacaksınız. Daha sonra Paw Sign'ı tekrar kullanmak isteyebileceğinizi düşünüyorsanız, bunun yerine hesabınızı devre dışı bırakmayı düşünün, bu sayede daha sonra tekrar etkinleştirebilirsiniz.</p>
+                </div>
+
+                <!-- 7 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">7</span>
+                        Veri Hakları & KVKK & GDPR Uyumluluğu
+                    </h4>
+                    <p class="text-[15px] pl-11">KVKK, GDPR ve benzeri veri koruma düzenlemeleri kapsamında, kişisel verilerinizin silinmesini talep etme hakkınız vardır. Hesap silme, bu "Unutulma Hakkı" talebini yerine getirir. Ek veri gizliliği sorularınız varsa, lütfen <a href="mailto:hello@pawsign.app" class="text-[#38b2ac] hover:underline">hello@pawsign.app</a> ile iletişime geçin.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

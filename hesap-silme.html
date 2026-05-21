@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion | Paw Sign</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+        :root {
+            --brand-teal: #38b2ac;
+            --brand-dark: #2c7a7b;
+            --soft-bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--soft-bg);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--brand-teal);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="text-slate-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-[100] glass-nav border-b border-teal-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+                <div class="relative">
+                    <div
+                        class="absolute -inset-1 bg-teal-400 rounded-full blur opacity-25 group-hover:opacity-50 transition">
+                    </div>
+                    <img src="PawSign.svg" alt="Paw Sign Logo" class="relative w-10 h-10 object-contain rounded-lg">
+                </div>
+                <span class="text-xl font-extrabold tracking-tight text-slate-800">
+                    PAW<span class="text-[#38b2ac]">SIGN</span>
+                </span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-10 text-[15px] font-medium text-slate-600">
+                <a href="index.html" class="hover:text-[#38b2ac] transition-colors">Home</a>
+                <a href="index.html#contact" class="hover:text-[#38b2ac] transition-colors">Contact</a>
+                <div class="h-4 w-[1px] bg-slate-200"></div>
+                <a href="index.html"
+                    class="bg-slate-900 text-white px-7 py-2.5 rounded-full font-semibold hover:bg-black transition shadow-lg shadow-slate-200">
+                    Download Now
+                </a>
+            </div>
+
+            <button class="md:hidden text-slate-800">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Account Deletion Section -->
+    <section class="pt-32 pb-24 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-14">
+                <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">Account Deletion</h1>
+                <p class="mt-4 text-slate-500 text-sm">Last updated: May 21, 2026</p>
+            </div>
+
+            <div
+                class="bg-white rounded-[3rem] border border-teal-100 p-10 lg:p-14 shadow-sm space-y-10 text-slate-600 leading-relaxed">
+
+                <!-- Introduction -->
+                <p class="text-[15px] text-slate-600 leading-relaxed">
+                    At <strong>Paw Sign</strong>, we respect your right to manage your personal data. This guide explains how you can request the deletion of your account and associated data, and what happens when you do.
+                </p>
+
+                <!-- Important Message -->
+                <div class="bg-red-50 border border-red-200 rounded-2xl p-8">
+                    <p class="text-[15px] text-red-900 leading-relaxed mb-4">
+                        <strong>We don't want to lose you, but we respect your decision.</strong>
+                    </p>
+                    <p class="text-[15px] text-red-800 leading-relaxed">
+                        When you delete your account, all your training history, health records, care logs, and personal notes will be removed from Paw Sign.
+                    </p>
+                </div>
+
+                <!-- What Will Be Deleted -->
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 text-red-600">WHAT WILL BE DELETED</h3>
+                    <ul class="space-y-2 text-[15px]">
+                        <li class="flex items-start gap-3"><span
+                                class="mt-1 w-5 h-5 rounded flex items-center justify-center bg-red-100 text-red-600 font-bold shrink-0 text-xs">✓</span><span>Training history and progress</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="mt-1 w-5 h-5 rounded flex items-center justify-center bg-red-100 text-red-600 font-bold shrink-0 text-xs">✓</span><span>Health tracking records</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="mt-1 w-5 h-5 rounded flex items-center justify-center bg-red-100 text-red-600 font-bold shrink-0 text-xs">✓</span><span>Care tracking and logs</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="mt-1 w-5 h-5 rounded flex items-center justify-center bg-red-100 text-red-600 font-bold shrink-0 text-xs">✓</span><span>Reminders and notifications</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="mt-1 w-5 h-5 rounded flex items-center justify-center bg-slate-100 text-slate-600 font-bold shrink-0 text-xs">•</span><span>Saved guides and personal notes</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="mt-1 w-5 h-5 rounded flex items-center justify-center bg-red-100 text-red-600 font-bold shrink-0 text-xs">✓</span><span>Your dog's profile and settings</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="mt-1 w-5 h-5 rounded flex items-center justify-center bg-red-100 text-red-600 font-bold shrink-0 text-xs">✓</span><span>All account data</span></li>
+                    </ul>
+                </div>
+
+                <!-- What Happens Next -->
+                <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6">
+                    <h3 class="text-lg font-bold text-amber-900 mb-3">WHAT HAPPENS NEXT?</h3>
+                    <p class="text-[15px] text-amber-900">
+                        Your account and all your data will be permanently deleted.
+                    </p>
+                </div>
+
+                <!-- 1 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">1</span>
+                        How to Delete Your Account
+                    </h4>
+                    <p class="text-[15px] pl-11 mb-3">To delete your Paw Sign account:</p>
+                    <ul class="pl-11 space-y-2 text-[15px]">
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span>Open the Paw Sign app</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span>Go to Settings (usually in the main menu or profile section)</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span>Select "Delete Account" or "Account Settings"</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span>Follow the confirmation steps</span></li>
+                    </ul>
+                </div>
+
+                <!-- 2 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">2</span>
+                        What Gets Deleted
+                    </h4>
+                    <p class="text-[15px] pl-11 mb-3">When you delete your Paw Sign account:</p>
+                    <ul class="pl-11 space-y-2 text-[15px]">
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Your account profile:</strong> All login credentials and account information associated with your email</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Cloud-stored data:</strong> Any backup or synced information stored on our servers</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Personal information:</strong> Your name, email, phone number, and other identifying details</span></li>
+                    </ul>
+                </div>
+
+                <!-- 3 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">3</span>
+                        What Remains After Deletion
+                    </h4>
+                    <p class="text-[15px] pl-11 mb-3">Please note the following:</p>
+                    <ul class="pl-11 space-y-2 text-[15px]">
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Local device data:</strong> Information stored only on your device's local storage will remain on your device until you manually clear it or uninstall the app</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Legal records:</strong> We may retain minimal data as required by law for tax, legal, or compliance purposes</span></li>
+                        <li class="flex items-start gap-2"><span
+                                class="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span><strong>Anonymized analytics:</strong> Completely anonymized usage data may be retained to improve our service</span></li>
+                    </ul>
+                </div>
+
+                <!-- 4 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">4</span>
+                        Account Deletion Timeline
+                    </h4>
+                    <p class="text-[15px] pl-11">When you request account deletion, most data is deleted immediately. However, some data may take up to <strong>30 days</strong> to be completely removed from our backup systems. This delay ensures we can recover your account in case of accidental deletion.</p>
+                </div>
+
+                <!-- 5 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">5</span>
+                        Requesting Deletion Through Email
+                    </h4>
+                    <p class="text-[15px] pl-11 mb-3">If you're unable to delete your account through the app, you can contact us directly:</p>
+                    <p class="text-[15px] pl-11"><strong>Email:</strong> <a href="mailto:hello@pawsign.app" class="text-[#38b2ac] hover:underline">hello@pawsign.app</a></p>
+                    <p class="text-[15px] pl-11 mt-2">Include your account email address and request account deletion. Please allow 5-7 business days for processing.</p>
+                </div>
+
+                <!-- 6 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">6</span>
+                        Irreversibility
+                    </h4>
+                    <p class="text-[15px] pl-11"><strong>Important:</strong> Account deletion is permanent and irreversible. Once your account is deleted, you will not be able to recover your data. If you think you might want to use Paw Sign again, consider deactivating your account instead, which allows you to reactivate it later.</p>
+                </div>
+
+                <!-- 7 -->
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center text-[#38b2ac] text-sm font-extrabold shrink-0">7</span>
+                        Data Rights & GDPR Compliance
+                    </h4>
+                    <p class="text-[15px] pl-11">Under GDPR and similar data protection regulations, you have the right to request deletion of your personal data. Account deletion fulfills this "Right to be Forgotten" request. If you have additional data privacy questions, contact us at <a href="mailto:hello@pawsign.app" class="text-[#38b2ac] hover:underline">hello@pawsign.app</a>.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
